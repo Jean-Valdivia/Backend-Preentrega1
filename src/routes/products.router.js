@@ -12,7 +12,7 @@ router
             payload: products
         })
     })
-    
+
     .get('/:pid', async (req,res)=>{
         const {pid} = req.params
         const product = await productService.getProduct(pid)
@@ -21,7 +21,6 @@ router
                 status: 'error',
                 payload: 'No se encuentra el producto'
             })
-            
         }
         res.send({
             status: 'succes',
