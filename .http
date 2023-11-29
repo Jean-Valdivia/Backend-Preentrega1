@@ -1,0 +1,14 @@
+/// ______________________ products _______________
+
+GET http://localhost:8080/api/products
+
+##
+GET http://localhost:8080/api/products/sdfsfgdsdgvdxcvb1
+##
+post http://localhost:8080/api/products
+##
+put http://localhost:8080/api/products/sdfsfgdsdgvdxcvb1asd
+##
+delete http://localhost:8080/api/products/sdfsfgdsdgvdxcvb1daf
+
+/// ______________________ cart________________
