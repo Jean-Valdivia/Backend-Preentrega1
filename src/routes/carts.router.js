@@ -1,10 +1,10 @@
 const { Router } = require("express");
-const CartsManager = require("../managers/CartManager.js");
+const CartsManager = require("../managers/cartManager.js");
 const cartsService = new CartsManager("./src/data/carts.json");
 const router = Router();
 
 const middle_ware = (req, res, next) => {
-    req.user = "Esteseriaelusuario";
+    req.user = "usuarioX";
     console.log(req.user);
     next();
 };
